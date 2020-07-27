@@ -1,0 +1,1 @@
+<view id="myview">{{'这是父组件传递来的数据'+title+''}}<button data-event-opts="{{[['tap',[['sendNum',['$event']]]]]}}" bindtap="__e">给父组件传值</button></view>

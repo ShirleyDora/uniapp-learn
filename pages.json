@@ -1,0 +1,127 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				//"navigationBarTitleText": "uni-ui基础项目"
+			}
+		},
+		{
+			"path":"pages/message/message",
+			"style":{
+				"navigationBarTitleText":"信息页",
+				"navigationBarBackgroundColor": "#ffaa7f",
+				"h5":{
+					"pullToRefresh":{
+						"color":"#ff0000"
+					}
+				}
+			}
+		},
+		
+	    {
+            "path" : "pages/detail/detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/unistyle/unistyle",
+            "style" : {}
+        },
+		{
+		    "path" : "pages/navigator/navigator",
+		    "style" : {}
+		},
+        {
+            "path" : "pages/home/home",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/list/list",
+            "style" : {
+				 "enablePullDownRefresh":true,
+				 "onReachBottomDistance":200
+			}
+        },
+		{
+            "path" : "components/test01/test01",
+            "style" : {}
+        },
+		{
+		    "path" : "components/b/b",
+		    "style" : {}
+		}
+       
+        ,{
+            "path" : "components/a/a",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",//导航栏标题字体颜色只有黑色与白色
+		"navigationBarTitleText": "hello",
+		"navigationBarBackgroundColor": "#007AFF",//导航栏标题颜色
+		"backgroundColor": "#7ccd7c",//下拉刷新颜色
+		// "enablePullDownRefresh":true,//开启全局下拉,不推荐
+		"backgroundTextStyle":"light"//dark&light
+	},
+	"tabBar":{
+		"color":"#a0522d",
+		"selectedColor":"#b3ee3a",
+		"backgroundColor":"#F0F0F0",
+		"borderStyle":"white",
+		//"position":"top",//只在小程序中起作用
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			{
+				"text":"跳转页",
+				"pagePath":"pages/navigator/navigator",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			{
+				"text":"信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			{
+				"text":"详情页",
+				"pagePath":"pages/detail/detail",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			{
+				"text":"样式页",
+				"pagePath":"pages/unistyle/unistyle",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			{
+				"text":"渲染页",
+				"pagePath":"pages/home/home",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			},
+			
+			{
+				"text":"页面刷新页",
+				"pagePath":"pages/list/list",
+				"iconPath":"static/tabs/message.jpg",
+				"selectedIconPath":"static/tabs/message-active.jpg"
+			}
+		]
+	},
+	"condition":{
+		"current":0,
+		"list":[{
+			"name":"详情页",
+			"path":"pages/detail/detail",
+			"query":"id*80"
+		}]
+	}//直接进入到详情页默认索引0
+}
